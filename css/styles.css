@@ -46,7 +46,9 @@ h1 {
     justify-items: center;
 }
 
-
+.card:hover{
+    cursor: pointer;
+}
 
 .employee-img {
     grid-area: img;
@@ -65,8 +67,11 @@ h1 {
 
 .employee-email {
     grid-area: email;
-    text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: darkblue;
 }
 
 .employee-town {
@@ -85,7 +90,7 @@ h1 {
 
 .modal {
     width: 90%;
-    margin: 10vh auto auto;
+    margin: 5vh auto auto;
     position: relative;
     text-align: center;
     background: #fff;
@@ -139,7 +144,6 @@ h1 {
 @media (min-width: 1300px) {
 
     .card {
-        /* background-color: lightpink; */
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
             "img name name"
@@ -151,14 +155,11 @@ h1 {
 
         margin-right: 20px;
         margin-bottom: 20px;
-        /* flex-grow: 1;
-        flex-basis: 50%; */
         min-width: 20vw;
     }
 
 
     .employee-name {
-        /* background-color: red; */
         margin-bottom: 0px;
         padding-top: 0.4em;
         padding-bottom: 0.2em;
@@ -170,7 +171,6 @@ h1 {
 
     
     .employee-town {
-        /* background-color: blue;  */
         margin-top: 0px;
         padding-bottom: 1em;
         padding-top: 0.1em;
